@@ -6,7 +6,7 @@ name: Auto Run Daily
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 23 * * *"
+    - cron: "15 16 * * *"
 
 jobs:
   build:
@@ -33,4 +33,4 @@ jobs:
           GRADUATING: ${{ secrets.graduating }}
           API_KEY: ${{ secrets.api_key }}
         run: |
-          python report.py "$USERNAME" "$PASSWORD" "$GRADUATING" -k "$API_KEY"
+          python report.py "$USERNAME" "$PASSWORD" $GRADUATING -k "$API_KEY"
