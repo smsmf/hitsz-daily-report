@@ -18,4 +18,4 @@
    | API_KEY | 微信推送的 `sckey` <sup>[如何申请？](http://sc.ftqq.com/?c=wechat&a=bind)</sup>，不需要请留空 |
 3. 开启 Github Actions <sup>[如何开启？](./how-to-enable-actions)</sup>
 4. 每天凌晨 0:15 <sup>16:15 UTC</sup> 定时自动运行  
-   如果填写 `API_KEY` ，即可在微信上收到运行结果推送（由 [Server 酱](http://sc.ftqq.com/) 提供）
+   如果填写 `BARK_KEY` ，即可在BARK上收到运行结果推送
