@@ -186,7 +186,7 @@ if __name__ == '__main__':
     parser.add_argument('username', help='登录用户名')
     parser.add_argument('password', help='登录密码')
     parser.add_argument('-g', '--graduating', help='是否毕业班', action="store_true")
-    parser.add_argument('-k', '--sckey', help='Server酱的sckey')
+    parser.add_argument('-k', '--sckey', help='BARK_api')
     arguments = parser.parse_args()
 
     try:
@@ -207,4 +207,4 @@ if __name__ == '__main__':
     if arguments.sckey:
         current = datetime.today().strftime('%Y-%m-%d_%H:%M:%S')
         requests.get(f"https://api.day.app/{arguments.sckey}/{report_msg}{current}")
-        logging.info("微信提醒消息已发送。")
+        logging.info("BARK消息已发送。")
