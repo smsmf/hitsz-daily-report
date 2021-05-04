@@ -3,7 +3,7 @@ name: Auto Report Daily
 on:
   workflow_dispatch:
   schedule:
-    - cron: "15 15 * * *"
+    - cron: "15 16 * * *"
 
 jobs:
   build:
