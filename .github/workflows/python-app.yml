@@ -48,4 +48,4 @@ jobs:
           GRADUATING: ${{ secrets.graduating }}
           BARK_KEY: ${{ secrets.bark_key }}
         run: |
-          python report.py "$USERNAME" "$PASSWORD" $GRADUATING -k "$BARK_KEY" -p
+          python report.py "$USERNAME" "$PASSWORD" -k="$BARK_KEY" -p
